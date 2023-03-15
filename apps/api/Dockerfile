@@ -13,7 +13,7 @@ WORKDIR /usr/src/app
 COPY --chown=node:node package*.json ./
 
 # Install app dependencies using the `npm ci` command instead of `npm install`
-RUN npm install --legacy-peer-deps && npm cache clean --force --omit=dev
+RUN npm cache clean --force --omit=dev && npm ci
 
 # Bundle app source
 COPY --chown=node:node . .
