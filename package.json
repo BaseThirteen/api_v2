@@ -5,7 +5,6 @@
   "author": "metacube",
   "private": true,
   "license": "UNLICENSED",
-  "node": ">=16.14.0",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
